@@ -4,7 +4,7 @@ import os
 
 
 ignore_files = ["README.md", ".gitignore", "restore_dotfiles.py", ".config"]
-files = [os.path.abspath(f) for f in os.listdir() if f not in ignore_files]
+files = [f for f in os.listdir() if f not in ignore_files]
 home_directory = os.path.expanduser("~")
 
 print("Restoring the dotfiles ...")
