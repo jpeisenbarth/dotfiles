@@ -1,0 +1,73 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "8acbfb8c-e9c9-447a-9ae3-882d9a88c11c"
+    jade:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+      default_beautifier: "Pretty Diff"
+      space_after_anon_function: true
+      wrap_line_length: 120
+    jsx:
+      beautify_on_save: true
+      default_beautifier: "JS Beautify"
+      keep_array_indentation: true
+      keep_function_indentation: true
+      wrap_line_length: 120
+    typescript:
+      beautify_on_save: true
+      end_with_comma: true
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      wrap_line_length: 120
+  core:
+    disabledPackages: [
+      "autocomplete-ruby"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 120
+    scrollPastEnd: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "da436c91-5878-2ac7-2802-9b73bd92907d"
+  "linter-tslint":
+    fixOnSave: true
+  "linter-ui-default":
+    panelHeight: 69
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 120
+    showIndentGuide: false
+    showInvisibles: false
+    softWrap: false
+    softWrapAtPreferredLineLength: false
+".js.regexp.source":
+  editor:
+    preferredLineLength: 120
+".js.source":
+  editor:
+    preferredLineLength: 120
+    scrollPastEnd: false
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".source.ts":
+  editor:
+    preferredLineLength: 120
+    showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+".source.tsx":
+  editor:
+    showIndentGuide: true

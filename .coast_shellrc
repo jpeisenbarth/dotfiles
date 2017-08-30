@@ -1,0 +1,8 @@
+ethereum_blockchain=$HOME/dev/ethereum/myblockchain/
+work_time_script=$HOME/dev/scripts/agatte/work_time.py
+
+# Aliases
+	alias geth='geth --datadir "$ethereum_blockchain"'
+	alias work_time='python3 $work_time_script'
+	alias ssh_grid5000='ssh jeisenbarth@access.nancy.grid5000.fr'
+	alias ssh_vps387426='ssh root@vps387426.ovh.net'

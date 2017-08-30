@@ -1,0 +1,5 @@
+[user]
+	name = Jean-Philippe Eisenbarth
+	email = user@changethis.ext
+[push]
+	default = simple

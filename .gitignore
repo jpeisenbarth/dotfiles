@@ -1,0 +1,10 @@
+## Atom files
+
+.atom/blob-store
+.atom/compile-cache
+.atom/.apm
+.atom/.node-gyp
+.atom/packages
+.atom/recovery
+.atom/storage/*
+.atom/nohup.out
