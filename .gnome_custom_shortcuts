@@ -1,0 +1,30 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+volume-down='<Primary>3'
+volume-mute='<Primary>2'
+volume-up='<Primary>4'
+
+[custom-keybindings/custom2]
+binding='<Super>6'
+command='wmctrl -s 5'
+name="Passer à l'espace de travail 6"
+
+[custom-keybindings/custom1]
+binding='<Super>5'
+command='wmctrl -s 4'
+name="Passer à l'espace de travail 5"
+
+[custom-keybindings/custom4]
+binding='<Shift><Super>l'
+command='/bin/bash /home/jpe/lock_suspend.sh'
+name='Lock & Suspend'
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='terminator -T Terminator --geometry=700'
+name='Lancer Terminator'
+
+[custom-keybindings/custom3]
+binding='<Shift><Super>percent'
+command='wmctrl -r :ACTIVE: -t 4 && wmctrl -s 4'
+name="Déplacer la fenêtre vers l'espace de travail 5"
