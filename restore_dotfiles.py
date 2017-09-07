@@ -9,7 +9,7 @@ home_directory = os.path.expanduser("~")
 
 print("Restoring the dotfiles ...")
 
-if not os.path.isdir(os.path.join(home_directory, ".config/autostart"):
+if not os.path.isdir(os.path.join(home_directory, ".config/autostart")):
     os.makedirs(os.path.join(home_directory, ".config/autostart"))
 
 for f in files:
