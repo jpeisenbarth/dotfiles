@@ -1,22 +1,27 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   suppress_multiple_term_dialog = True
+  title_inactive_bg_color = "#585858"
+  title_transmit_bg_color = "#d70a53"
 [keybindings]
-[profiles]
-  [[default]]
-    scrollbar_position = hidden
-    palette = "#181818:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#d8d8d8:#585858:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#f8f8f8"
-    background_image = None
-    cursor_color = "#525252"
-    foreground_color = "#d8d8d8"
-    background_color = "#181818"
-    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#181818"
+    copy_on_selection = True
+    cursor_color = "#525252"
+    font = Inconsolata Medium 12
+    foreground_color = "#d8d8d8"
+    palette = "#181818:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#d8d8d8:#585858:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#f8f8f8"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    use_system_font = False

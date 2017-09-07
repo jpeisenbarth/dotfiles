@@ -3,7 +3,7 @@
 import os
 
 
-ignore_files = ["README.md", ".gitignore", "restore_dotfiles.py", ".config"]
+ignore_files = ["README.md", ".git", ".gitignore", "restore_dotfiles.py", ".config"]
 files = [f for f in os.listdir() if f not in ignore_files]
 home_directory = os.path.expanduser("~")
 

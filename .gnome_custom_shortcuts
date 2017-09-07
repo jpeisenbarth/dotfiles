@@ -1,13 +1,26 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
-volume-down='<Primary>3'
-volume-mute='<Primary>2'
+play=''
 volume-up='<Primary>4'
+volume-down='<Primary>3'
+screensaver='<Primary>equal'
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
+volume-mute='<Primary>2'
+pause='<Primary>grave'
+
+[custom-keybindings/custom6]
+binding='<Super>l'
+command='/bin/bash /home/jpe/lock.sh'
+name="Verrouiller l'écran (+ Pause)"
 
 [custom-keybindings/custom2]
 binding='<Super>6'
 command='wmctrl -s 5'
 name="Passer à l'espace de travail 6"
+
+[custom-keybindings/custom5]
+binding='<Primary>1'
+command='/bin/bash /home/jpe/pause.sh'
+name='Pause (XF86AudioPlay)'
 
 [custom-keybindings/custom1]
 binding='<Super>5'
