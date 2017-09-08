@@ -8,6 +8,3 @@
 .atom/recovery
 .atom/storage/*
 .atom/nohup.out
-
-
-.gitconfig
