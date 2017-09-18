@@ -19,8 +19,8 @@ name="Passer à l'espace de travail 6"
 
 [custom-keybindings/custom5]
 binding='<Primary>1'
-command='/bin/bash /home/jpe/pause.sh'
-name='Pause (XF86AudioPlay)'
+command='/bin/bash /home/jpe/play_pause.sh'
+name='Play Pause (XF86AudioPlay)'
 
 [custom-keybindings/custom1]
 binding='<Super>5'
