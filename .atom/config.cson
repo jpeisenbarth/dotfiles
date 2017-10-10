@@ -28,6 +28,10 @@
     ]
     excludeVcsIgnoredPaths: false
     telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
   editor:
     preferredLineLength: 120
     scrollPastEnd: true
