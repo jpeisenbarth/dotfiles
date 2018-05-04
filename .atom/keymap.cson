@@ -1,0 +1,12 @@
+'atom-workspace, .go-debug-output, .go-debug-panel':
+  'f5': 'go-debug:start'
+  'shift-f5': 'go-debug:restart'
+  'f6': 'go-debug:resume'
+  'f7': 'go-debug:next'
+  'f8': 'go-debug:stepIn'
+  'shift-f8': 'go-debug:stepOut'
+  'f9': 'go-debug:stop'
+  'f10': 'go-debug:toggle-breakpoint'
+'body.platform-win32 atom-workspace, body.platform-linux atom-workspace':
+  'ctrl-k ctrl-g': 'go-debug:toggle-panel'
+'.platform-linux atom-text-editor[data-grammar~=js]':'alt-d': 'atom-ternjs:documentation'

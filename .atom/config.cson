@@ -1,12 +1,24 @@
 "*":
   "atom-beautify":
+    coffeescript:
+      disabled: true
+    css:
+      disabled: true
+    executables:
+      autopep8:
+        path: "/usr/local/bin/autopep8"
     general:
       _analyticsUserId: "8acbfb8c-e9c9-447a-9ae3-882d9a88c11c"
     jade:
       beautify_on_save: true
     js:
       beautify_on_save: true
-      default_beautifier: "Pretty Diff"
+      break_chained_methods: true
+      disabled: true
+      indent_size: 4
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
       space_after_anon_function: true
       wrap_line_length: 120
     jsx:
@@ -15,34 +27,59 @@
       keep_array_indentation: true
       keep_function_indentation: true
       wrap_line_length: 120
+    markdown:
+      disabled: true
+    python:
+      beautify_on_save: true
+      max_line_length: 120
+    scss:
+      disabled: true
     typescript:
       beautify_on_save: true
+      disabled: true
       end_with_comma: true
       jslint_happy: true
       keep_array_indentation: true
       keep_function_indentation: true
       wrap_line_length: 120
+  "autocomplete-python":
+    useKite: false
   core:
     disabledPackages: [
       "autocomplete-ruby"
+      "python-indent"
+      "language-gfm"
     ]
     excludeVcsIgnoredPaths: false
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
       "one-dark-syntax"
     ]
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 200
     scrollPastEnd: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "da436c91-5878-2ac7-2802-9b73bd92907d"
+  "go-debug":
+    configurationFile: [
+      "/home/jpe/.godebug/client-debug.json"
+    ]
+  "linter-eslint":
+    fixOnSave: true
   "linter-tslint":
     fixOnSave: true
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 199
+    showPanel: true
+  "markdown-preview": {}
+  "markdown-table-formatter": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true

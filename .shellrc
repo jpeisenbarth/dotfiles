@@ -42,8 +42,9 @@ export HISTTIMEFORMAT="%F %T : "
     alias grep='grep --color=auto'
     alias less='less -Rs'
     alias egrep='egrep --color=auto'
-    alias ll='ls -lh --color=auto'
-    alias lla='ls -lah --color=auto'
+    alias ll='ls -lFh'
+    alias lla='ll -a'
+    alias ls='ls --color=auto'
     alias du='du -h'
     alias df='df -h'
     alias tree='tree -C'
@@ -62,6 +63,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias mntloriafs="sshfs -o reconnect,workaround=all,ServerAliveInterval=10,ServerAliveCountMax=3 jeisenba@loria.loria.fr:/users/jeisenba/ $LORIAFS_MNT_DIR"
     alias umntloriafs="sudo umount $LORIAFS_MNT_DIR"
     alias vpnloria='sudo openconnect --script /usr/share/vpnc-scripts/vpnc-script --cafile=$HOME/dev/loria/chain-TCS-2015.pem https://vpn.inria.fr'
+    alias sudo="sudo "
 
     export WORKON_HOME=~/.virtualenvs
     mkdir -p $WORKON_HOME

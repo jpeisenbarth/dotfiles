@@ -1,11 +1,12 @@
 [/]
-play=''
-volume-up='<Primary>4'
-volume-down='<Primary>3'
+next='<Primary><Shift>plus'
+play='<Primary>grave'
+volume-up='AudioRaiseVolume'
+volume-down='AudioLowerVolume'
 screensaver='<Primary>equal'
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
-volume-mute='<Primary>2'
-pause='<Primary>grave'
+volume-mute='AudioMute'
+previous='<Primary><Shift>underscore'
 
 [custom-keybindings/custom6]
 binding='<Super>l'
@@ -34,7 +35,7 @@ name='Lock & Suspend'
 
 [custom-keybindings/custom0]
 binding='<Super>Return'
-command='terminator -T Terminator --geometry=700'
+command='terminator -T Terminator'
 name='Lancer Terminator'
 
 [custom-keybindings/custom3]
