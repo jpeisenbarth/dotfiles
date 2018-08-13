@@ -5,7 +5,7 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 export TERM=xterm
-export EDITOR=vim
+export EDITOR=nvim
 export CODE_EDITOR=atom
 export BROWSER=firefox
 export PAGER=less
@@ -18,7 +18,7 @@ export WORKON_HOME=~/.virtualenvs
 export ANDROID_SDK_TOOLS_PATH=~/android-sdk-linux/tools
 export ANDROID_SDK_PLATFORM_TOOLS_PATH=~/android-sdk-linux/platform-tools
 export ANDROID_SDK_BUILD_TOOLS_PATH=~/android-sdk-linux/build-tools/23.0.3
-export PATH=~/bin:~/.local/bin:$GOPATH/bin:/usr/local/bin:/sbin:/usr/sbin:$ANDROID_SDK_TOOLS_PATH:$ANDROID_SDK_PLATFORM_TOOLS_PATH:$ANDROID_SDK_BUILD_TOOLS_PATH:$PATH
+export PATH=~/bin:~/.local/bin:$GOPATH/bin:/usr/local/bin:/sbin:/usr/sbin:$ANDROID_SDK_TOOLS_PATH:$ANDROID_SDK_PLATFORM_TOOLS_PATH:$ANDROID_SDK_BUILD_TOOLS_PATH:~/.npm-global/bin:$PATH
 #export PATH=/usr/lib/go-1.8/bin:~/bin:~/.local/bin:$GOPATH/bin:/usr/local/bin:/sbin:/usr/sbin:$ANDROID_SDK_TOOLS_PATH:$ANDROID_SDK_PLATFORM_TOOLS_PATH:$ANDROID_SDK_BUILD_TOOLS_PATH:$PATH
 #export LDFLAGS=/usr/local/lib
 #export CFLAGS=/usr/local/include
@@ -39,12 +39,14 @@ export HISTTIMEFORMAT="%F %T : "
     fi
 
 # Aliases
-    alias grep='grep --color=auto'
+    alias vim=nvim
+    alias find='fd'
+    alias grep='rg --color=auto'
     alias less='less -Rs'
     alias egrep='egrep --color=auto'
-    alias ll='ls -lFh'
+    alias ls='exa'
+    alias ll='exa -lFh'
     alias lla='ll -a'
-    alias ls='ls --color=auto'
     alias du='du -h'
     alias df='df -h'
     alias tree='tree -C'
@@ -64,6 +66,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias umntloriafs="sudo umount $LORIAFS_MNT_DIR"
     alias vpnloria='sudo openconnect --script /usr/share/vpnc-scripts/vpnc-script --cafile=$HOME/dev/loria/chain-TCS-2015.pem https://vpn.inria.fr'
     alias sudo="sudo "
+    alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
 
     export WORKON_HOME=~/.virtualenvs
     mkdir -p $WORKON_HOME
@@ -109,8 +112,14 @@ function swap()
         mv $TMPFILE "$2"
 }
 
-function conj() {
+function conj() 
+{
     french-conjugator --pronouns $1
+}
+
+function conj-ind-present() 
+{
+    french-conjugator --pronouns --mode=indicative --tense=present $1
 }
 
 man() {
@@ -123,4 +132,27 @@ man() {
         LESS_TERMCAP_ue=$(printf "\e[0m") \
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
         man "$@"
+}
+
+# Use ~~ as the trigger sequence instead of the default **
+export FZF_COMPLETION_TRIGGER='~~'
+
+# Options to fzf command
+export FZF_COMPLETION_OPTS='+c -x'
+
+# Use fd instead of find
+# Follows symbolic links, include hidden files, exclude .git
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
 }
