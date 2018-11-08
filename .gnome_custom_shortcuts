@@ -4,7 +4,7 @@ play='<Primary>grave'
 volume-up='AudioRaiseVolume'
 volume-down='AudioLowerVolume'
 screensaver='<Primary>equal'
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
 volume-mute='AudioMute'
 previous='<Primary><Shift>underscore'
 
@@ -13,20 +13,10 @@ binding='<Super>l'
 command='/bin/bash /home/jpe/lock.sh'
 name="Verrouiller l'écran (+ Pause)"
 
-[custom-keybindings/custom2]
-binding='<Super>6'
-command='wmctrl -s 5'
-name="Passer à l'espace de travail 6"
-
 [custom-keybindings/custom5]
 binding='<Primary>1'
 command='/bin/bash /home/jpe/play_pause.sh'
 name='Play Pause (XF86AudioPlay)'
-
-[custom-keybindings/custom1]
-binding='<Super>5'
-command='wmctrl -s 4'
-name="Passer à l'espace de travail 5"
 
 [custom-keybindings/custom4]
 binding='<Shift><Super>l'
@@ -38,7 +28,7 @@ binding='<Super>Return'
 command='terminator -T Terminator'
 name='Lancer Terminator'
 
-[custom-keybindings/custom3]
-binding='<Shift><Super>percent'
-command='wmctrl -r :ACTIVE: -t 4 && wmctrl -s 4'
-name="Déplacer la fenêtre vers l'espace de travail 5"
+[custom-keybindings/custom7]
+binding='F9'
+command='/usr/bin/dbus-send --type=method_call --dest=org.guake.RemoteControl /org/guake/RemoteControl org.guake.RemoteControl.show_hide'
+name='Lancer Guake'

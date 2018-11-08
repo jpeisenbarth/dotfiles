@@ -1,5 +1,5 @@
 ethereum_blockchain=$HOME/dev/ethereum/myblockchain/
-work_time_script=$HOME/dev/scripts/agatte/work_time.py
+work_time_script=$HOME/dev/loria/coast/scripts/agatte/work_time.py
 
 # Aliases
 	alias geth='geth --datadir "$ethereum_blockchain"'

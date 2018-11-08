@@ -45,7 +45,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias less='less -Rs'
     alias egrep='egrep --color=auto'
     alias ls='exa'
-    alias ll='exa -lFh'
+    alias ll='exa -glFh'
     alias lla='ll -a'
     alias du='du -h'
     alias df='df -h'
@@ -67,10 +67,12 @@ export HISTTIMEFORMAT="%F %T : "
     alias vpnloria='sudo openconnect --script /usr/share/vpnc-scripts/vpnc-script --cafile=$HOME/dev/loria/chain-TCS-2015.pem https://vpn.inria.fr'
     alias sudo="sudo "
     alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
+    alias sus='systemctl suspend'
+    alias hib='systemctl hibernate'
 
     export WORKON_HOME=~/.virtualenvs
     mkdir -p $WORKON_HOME
-    #source ~/.local/bin/virtualenvwrapper.sh
+    # source ~/.local/bin/virtualenvwrapper.sh
 
 # Functions to manage compilation cache
     env_dir=/usr/local/bin

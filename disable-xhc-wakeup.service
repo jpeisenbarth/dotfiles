@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable XHC Wakeup
+ 
+[Service]
+ExecStart=/usr/local/bin/disable-xhc-wakeup.sh
+ 
+[Install]
+WantedBy=multi-user.target
