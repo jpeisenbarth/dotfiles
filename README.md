@@ -1,7 +1,7 @@
 ## Restore dotfiles
 
 ```sh
-python3 restore_dotfiles.py
+stow <dirname>...
 ```
 
 ## Import Gnome3 keyboard shortcuts

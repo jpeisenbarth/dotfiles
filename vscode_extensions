@@ -1,5 +1,3 @@
-flatpak run com.visualstudio.code.oss --list-extensions | xargs -L 1 echo code --install-extension > .vscode_extensions
-################
 code --install-extension azemoh.one-monokai
 code --install-extension bungcip.better-toml
 code --install-extension christian-kohler.npm-intellisense

@@ -1,0 +1,21 @@
+{
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "vim.disableExtension": true,
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "editor.wordWrapColumn": 120,
+  "editor.rulers": [80, 120],
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceRoot}/.venv/bin/black",
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "**/site-packages/**/*.py",
+    ".venv/*"
+  ],
+  "editor.minimap.enabled": false,
+  "python.linting.mypyEnabled": true,
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc"
+}

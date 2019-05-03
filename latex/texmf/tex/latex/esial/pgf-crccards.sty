@@ -1,0 +1,60 @@
+% Drawing CRC cards in tikz
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+
+\newcommand{\crctextcolor}{black}
+\newcommand{\crcdrawcolor}{black}
+\newcommand{\crcfillcolor}{black!10}
+\tikzstyle{crccolor}=[color=\crcdrawcolor,fill=\crcfillcolor,text=\crctextcolor]
+\tikzstyle{crc style}=[crccolor, >=angle 90]
+\tikzstyle{crc style class}=[crccolor, rectangle split, rectangle split parts=2, draw, rounded corners, rectangle split part align={right}]
+%\tikzstyle{crc class} =[fill=black!70, text=white, rounded corners, inner sep=2pt, inner ysep=0pt]
+\tikzstyle{crc class} =[crccolor, rounded corners, inner sep=2pt, inner ysep=0pt, draw]
+
+\newcounter{crcRespNum}
+\newcounter{crcCollabNum}
+
+\newenvironment*{CRC}[2]{ % Name
+  \def\crcClassName{#2}%
+  \def\crcResponsabilities{}
+  \def\crcCollaborators{}
+  \setcounter{crcRespNum}{0}
+  \setcounter{crcCollabNum}{0}
+  \tikzstyle{this crc style class}=[crc style class, #1]
+}{
+  \resizebox{\linewidth}{!}{\rotatebox{90}{\begin{tikzpicture}
+      \node[this crc style class] (crc) {
+        \rotatebox{270}{\begin{minipage}{.7\linewidth}            
+            \tikz{\node[crccolor, inner sep=2pt] {\sf\small\bfseries Responsabilit\'es};}\\
+            \crcResponsabilities
+        \end{minipage}}
+        \nodepart{second}
+        \rotatebox{270}{\begin{minipage}{.3\linewidth}
+            \tikz{\node[crccolor, inner sep=2pt] {\sf\small\bfseries Collaborateurs};}\\
+            \crcCollaborators
+        \end{minipage}}
+      };  
+      \node[crc class, left=-\baselineskip of crc.east,inner sep=5pt] 
+          {\rotatebox{270}{\sf\crcClassName}};
+  \end{tikzpicture}}}
+}
+\newcommand{\responsability}[1]{%
+  \ifnum\c@crcRespNum=0
+  \protected@xdef\crcResponsabilities{-- #1}
+  \else
+  \let\crcResponsabilitiesOld\crcResponsabilities
+  \protected@xdef\crcResponsabilities{\crcResponsabilitiesOld \newline -- #1}
+  \fi
+  \stepcounter{crcRespNum}
+}
+\newcommand{\collaborator}[1]{%
+  \ifnum\c@crcCollabNum=0
+  \protected@xdef\crcCollaborators{-- #1}
+  \else
+  \let\crcCollaboratorsOld\crcCollaborators
+  \protected@xdef\crcCollaborators{\crcCollaboratorsOld \newline -- #1}
+  \fi
+  \stepcounter{crcCollabNum}
+}
+
