@@ -14,6 +14,10 @@ dconf load /org/gnome/desktop/wm/keybindings/ < .gnome_shortcuts
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < .gnome_custom_shortcuts
 ```
 
+```sh
+dconf load /org/gnome/shell/keybindings/ < .gnome_shell_shortcuts
+```
+
 ### Disable xhc wakeup
 
 ```sh

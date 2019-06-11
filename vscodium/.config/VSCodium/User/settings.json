@@ -17,5 +17,6 @@
   ],
   "editor.minimap.enabled": false,
   "python.linting.mypyEnabled": true,
-  "C_Cpp.default.compilerPath": "/usr/bin/gcc"
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "explorer.confirmDelete": false
 }

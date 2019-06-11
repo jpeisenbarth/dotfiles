@@ -3,6 +3,7 @@ source ~/.coast_shellrc
 # Source bash completion if available.
 [ -r /etc/bash_completion ] && . /etc/bash_completion
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[ -r ~/.pass-tail.bash.completion ] && . ~/.pass-tail.bash.completion
 
 # Reset
 reset='\e[0m'
@@ -48,4 +49,3 @@ fi
 # Base16 Shell
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
