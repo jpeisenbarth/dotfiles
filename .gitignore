@@ -8,3 +8,8 @@
 .atom/recovery
 .atom/storage/*
 .atom/nohup.out
+
+## VSCodium
+vscodium/.config/
+! vscodium/.config/VSCodium/User/settings.json
+! vscodium/.config/VSCodium/User/keybindings.json
