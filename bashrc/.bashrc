@@ -38,6 +38,10 @@ show_colors() {
     done
 }
 
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 alias s='. ~/.bashrc'
 
 if [[ $UID -eq 0 ]]; then
