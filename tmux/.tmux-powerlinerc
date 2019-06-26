@@ -116,9 +116,9 @@
 	# Port the MPD server is running on.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_PORT="6600"
 	# Song display format for mpd_simple. See mpc(1) for delimiters.
-	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_SIMPLE_FORMAT="%artist% - %title%"
+	export TMUX_POWERLINE_SEG_NOW_PLAYING_MPD_SIMPLE_FORMAT="%name% ---- %title%"
 	# Song display format for rhythmbox. see "FORMATS" in rhythmbox-client(1).
-	export TMUX_POWERLINE_SEG_NOW_PLAYING_RHYTHMBOX_FORMAT="%aa - %tt"
+	export TMUX_POWERLINE_SEG_NOW_PLAYING_RHYTHMBOX_FORMAT="%aa ----- %tt"
 	
 	# Username for Last.fm if that music player is used.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_USERNAME=""
