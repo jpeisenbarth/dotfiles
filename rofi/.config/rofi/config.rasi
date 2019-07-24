@@ -1,0 +1,6 @@
+configuration {
+location: 1;
+lines: 3;
+columns: 3;
+theme: "Monokai";
+}
