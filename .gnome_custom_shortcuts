@@ -1,32 +1,37 @@
 [/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 next='<Primary><Shift>plus'
 play='<Primary>grave'
-volume-up='AudioRaiseVolume'
-volume-down='AudioLowerVolume'
-screensaver='<Primary>equal'
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
-volume-mute='AudioMute'
 previous='<Primary><Shift>underscore'
+screensaver=''
+volume-down='<Primary>minus'
+volume-mute='<Primary>0'
+volume-up='<Primary>equal'
 
-[custom-keybindings/custom6]
-binding='<Super>l'
-command='/bin/bash /home/jpe/lock.sh'
-name="Verrouiller l'écran (+ Pause)"
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='gnome-terminal'
+name='Lancer Gnome Terminal'
 
-[custom-keybindings/custom5]
-binding='<Primary>1'
-command='/bin/bash /home/jpe/play_pause.sh'
-name='Play Pause (XF86AudioPlay)'
+[custom-keybindings/custom1]
+binding='<Alt>F2'
+command='rofi -width 2560 -show run'
+name='Lancer rofi'
 
 [custom-keybindings/custom4]
 binding='<Shift><Super>l'
 command='/bin/bash /home/jpe/lock_suspend.sh'
 name='Lock & Suspend'
 
-[custom-keybindings/custom0]
-binding='<Super>Return'
-command='terminator -T Terminator'
-name='Lancer Terminator'
+[custom-keybindings/custom5]
+binding='<Primary>1'
+command='/bin/bash /home/jpe/play_pause.sh'
+name='Play Pause (XF86AudioPlay)'
+
+[custom-keybindings/custom6]
+binding='<Super>l'
+command='/bin/bash /home/jpe/lock.sh'
+name="Verrouiller l'écran (+ Pause)"
 
 [custom-keybindings/custom7]
 binding='F9'
