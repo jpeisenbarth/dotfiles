@@ -5,7 +5,6 @@
   },
   "vim.disableExtension": true,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Gruvbox Dark (Hard)",
   "editor.wordWrapColumn": 120,
   "editor.rulers": [80, 120],
   "python.formatting.provider": "black",
@@ -18,5 +17,6 @@
   "editor.minimap.enabled": false,
   "python.linting.mypyEnabled": true,
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Gruvbox Dark (Hard)"
 }
