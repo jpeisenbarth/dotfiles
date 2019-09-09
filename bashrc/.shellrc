@@ -42,8 +42,8 @@ export HISTTIMEFORMAT="%F %T : "
 # Aliases
     alias gpg=gpg2
     alias vim=nvim
-    alias find='fd'
-    alias grep='rg --color=auto'
+    alias grep='grep --color=auto'
+    alias rg='rg --color=auto'
     alias less='less -Rs'
     alias egrep='egrep --color=auto'
     alias ls='exa'
@@ -71,6 +71,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
     alias sus='systemctl suspend'
     alias hib='systemctl hibernate'
+    alias lt=$'java -cp ~/languageTool-4.6/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin \'*\' --languageModel ~/ngrams/'
 
     export WORKON_HOME=~/.virtualenvs
     mkdir -p $WORKON_HOME
