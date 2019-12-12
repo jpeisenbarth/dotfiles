@@ -4,19 +4,35 @@
     "suppressShowKeyBindingsNotice": true
   },
   "vim.disableExtension": true,
-  "editor.formatOnSave": true,
   "editor.wordWrapColumn": 120,
   "editor.rulers": [80, 120],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "${workspaceRoot}/.venv/bin/black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
   "python.linting.ignorePatterns": [
     ".vscode/*.py",
     "**/site-packages/**/*.py",
     ".venv/*"
   ],
   "editor.minimap.enabled": false,
-  "python.linting.mypyEnabled": true,
-  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Gruvbox Dark (Hard)"
+  "workbench.colorTheme": "Tomorrow Night Eighties",
+  
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.includePath": [
+    "${default}",
+    "/usr/include/linux",
+    "/usr/include/c++/9/tr1"
+  ],
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.cppStandard": "c++20",
+  "python.pythonPath": ".venv/bin/python",
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--config=/home/jpe/.config/flake8"
+  ],
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
 }

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+_lxc-containers(){
+    local cur
+    local -a toks
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    toks=( $(  ls /var/lib/lxc | grep "$cur" ))
+    COMPREPLY=( "${toks[@]}" )
+    return 0
+}
+complete -F _lxc-containers -o nospace lxc-start
+complete -F _lxc-containers -o nospace lxc-stop
+complete -F _lxc-containers -o nospace lxc-attach

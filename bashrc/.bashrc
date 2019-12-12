@@ -4,6 +4,7 @@ source ~/.coast_shellrc
 [ -r /etc/bash_completion ] && . /etc/bash_completion
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 [ -r ~/.pass-tail.bash.completion ] && . ~/.pass-tail.bash.completion
+[ -r ~/.lxc.bash.completion ] && . ~/.lxc.bash.completion
 
 # Reset
 reset='\e[0m'
@@ -36,6 +37,10 @@ show_colors() {
         echo -en "${!bcolor}"
         printf "%-8s\n" "b${color}"
     done
+}
+
+bits_to_human_readable() {
+  numfmt --to=iec-i --suffix=B --padding=7 $1
 }
 
 #if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then

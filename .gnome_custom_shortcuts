@@ -1,12 +1,12 @@
 [/]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
-next='<Primary><Shift>plus'
-play='<Primary>grave'
-previous='<Primary><Shift>underscore'
-screensaver=''
-volume-down='<Primary>minus'
-volume-mute='<Primary>0'
-volume-up='<Primary>equal'
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+next=['<Primary><Shift>plus']
+play=['<Primary>grave']
+previous=['<Primary><Shift>underscore']
+screensaver=['']
+volume-down=['<Primary>minus']
+volume-mute=['<Primary>0']
+volume-up=['<Primary>equal']
 
 [custom-keybindings/custom0]
 binding='<Super>Return'
@@ -14,9 +14,13 @@ command='gnome-terminal'
 name='Lancer Gnome Terminal'
 
 [custom-keybindings/custom1]
-binding='<Alt>F2'
 command='rofi -width 2560 -show run'
 name='Lancer rofi'
+
+[custom-keybindings/custom2]
+binding='F9'
+command='guake-toggle'
+name='Guake'
 
 [custom-keybindings/custom4]
 binding='<Shift><Super>l'
@@ -32,8 +36,3 @@ name='Play Pause (XF86AudioPlay)'
 binding='<Super>l'
 command='/bin/bash /home/jpe/lock.sh'
 name="Verrouiller l'écran (+ Pause)"
-
-[custom-keybindings/custom7]
-binding='F9'
-command='/usr/bin/dbus-send --type=method_call --dest=org.guake.RemoteControl /org/guake/RemoteControl org.guake.RemoteControl.show_hide'
-name='Lancer Guake'
