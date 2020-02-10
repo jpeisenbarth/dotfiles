@@ -18,7 +18,6 @@
   "editor.minimap.enabled": false,
   "explorer.confirmDelete": false,
   "workbench.colorTheme": "Tomorrow Night Eighties",
-  
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "C_Cpp.default.compilerPath": "/usr/bin/gcc",
   "C_Cpp.default.includePath": [

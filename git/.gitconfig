@@ -10,3 +10,8 @@
 	required = true
 [branch]
 	autosetuprebase = always
+[diff "odf"]
+	textconv = odt2txt
+	cachetextconv = true
+[core]
+	attributesfile = /home/jpe/.gitattributes
