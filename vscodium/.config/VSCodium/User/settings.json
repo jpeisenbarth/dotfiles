@@ -7,7 +7,6 @@
   "editor.wordWrapColumn": 120,
   "editor.rulers": [80, 120],
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "${workspaceRoot}/.venv/bin/black",
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
   "python.linting.ignorePatterns": [
@@ -34,4 +33,5 @@
     "--config=/home/jpe/.config/flake8"
   ],
   "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "python.jediEnabled": false,
 }
