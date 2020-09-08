@@ -40,6 +40,7 @@ export HISTTIMEFORMAT="%F %T : "
     fi
 
 # Aliases
+    alias gconftool=gconftool-2
     alias tmux='tmux -2'
     alias gpg=gpg2
     alias grep='grep --color=auto'
@@ -71,7 +72,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
     alias sus='systemctl suspend'
     alias hib='systemctl hibernate'
-    alias lt=$'java -cp ~/languageTool-4.8/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin \'*\' --languageModel ~/ngrams/'
+    alias lt=$'java -cp ~/languageTool-5.0/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin \'*\' --languageModel ~/ngrams/'
 
     export WORKON_HOME=~/.virtualenvs
     mkdir -p $WORKON_HOME

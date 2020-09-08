@@ -1,3 +1,5 @@
+#codium --list-extensions | xargs -L 1 echo codium --install-extension > .vscode_extensions
+################
 codium --install-extension azemoh.one-monokai
 codium --install-extension bungcip.better-toml
 codium --install-extension christian-kohler.npm-intellisense
