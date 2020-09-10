@@ -70,6 +70,11 @@ HISTIGNORE="ls:ll:cd:pwd:bg:fg:history"
 HISTSIZE=100000
 HISTFILESIZE=10000000
 
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
 # Base16 Shell
 #BASE16_SHELL=$HOME/.config/base16-shell/
 #[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
