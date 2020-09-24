@@ -1,3 +1,4 @@
 #!/bin/bash
-xdg-screensaver lock; systemctl -i suspend
+playerctl pause
+xdg-screensaver lock; systemctl -i suspend 
 exit 0
