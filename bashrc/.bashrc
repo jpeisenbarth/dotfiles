@@ -61,7 +61,7 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 # append and reload the history after each command
-PROMPT_COMMAND="history -a; history -n"
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # ignore certain commands from the history
 HISTIGNORE="ls:ll:cd:pwd:bg:fg:history"

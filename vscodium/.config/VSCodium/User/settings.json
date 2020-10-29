@@ -37,8 +37,10 @@
   "workbench.colorCustomizations": {
     "editor.selectionHighlightBorder": "#686868"
   },
-  "workbench.colorTheme": "Tomorrow Night Eighties",
+  "workbench.colorTheme": "Nord",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "rust-client.disableRustup": true,
+  "rust.clippy_preference": "on"
 }
