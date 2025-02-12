@@ -48,7 +48,7 @@ export HISTTIMEFORMAT="%F %T : "
     alias less='less -Rs'
     alias egrep='egrep --color=auto'
     alias ls='exa'
-    alias ll='exa -glFh'
+    alias ll='exa -glhF'
     alias lla='ll -a'
     alias du='du -h'
     alias df='df -h'
